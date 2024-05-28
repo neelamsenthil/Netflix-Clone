@@ -1,0 +1,146 @@
+
+.hero{
+    position: relative;
+}
+.hero .banner-img{
+    width: 100%;
+    mask-image: linear-gradient(to right,transparent,black 70%);
+}
+
+.movie-title{
+    position: absolute;
+    width: 100%;
+    padding-left: 6%;
+    bottom: 0;
+}
+.movie-title .title-img{
+    width: 90%;
+    max-width: 420px;
+    margin-bottom: 15px;
+}
+.movie-title p{
+    margin-bottom: 10px;
+}
+.hero-btn{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+.hero-btn .play-btn,.info-btn{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 13%;
+    max-width: 400px;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding: 8px 20px;
+    cursor: pointer;
+}
+.hero-btn img{
+    width: 25px;
+}
+.hero-btn .play-btn{
+    background-color: white;
+    border-radius: 6px;
+    border-style: none;
+}
+.hero-btn .play-btn:hover{
+    background-color: rgba(255, 255, 255,0.8);
+}
+.hero-btn .info-btn{
+    /* width: max-content; */
+    border-radius: 6px;
+    border-style: none;
+    background-color: rgba(255, 255, 255,0.2);
+    color: white;
+}
+.hero-btn .info-btn:hover{
+    background-color: rgba(255, 255, 255,0.1);
+
+}
+ .more-cards{
+    padding-left: 5%;
+}
+
+@media (max-width:1250px){
+    .hero-btn .info-btn{
+        width: max-content;
+    }
+
+}
+
+
+@media (max-width:1024px){
+    .movie-title .title-container{
+        display: none;
+    }
+    .hero-btn{
+        margin-bottom: 30px;
+    }
+    .hero-btn .play-btn,.info-btn{
+        gap: 5px;
+        width: 10%;
+        max-width: 300px;
+        font-size: 1em;
+        font-weight: 500;
+        padding: 8px;
+    }
+    /* .hero-btn img{
+        width: 20px;
+    } */
+    .hero-btn .info-btn{
+        width: max-content;
+    }
+    .movie-title p{
+        margin-bottom: 10px;
+}
+
+
+    
+    
+}
+
+@media (max-width:800px){
+    .hero-btn .play-btn,.info-btn{
+        gap: 5px;
+        width: 8%;
+        max-width: 250px;
+        font-size: 1em;
+        font-weight: 500;
+        padding: 7px;
+    }
+    .hero-btn img{
+        width: 17px;
+    }
+    .hero-btn .play-btn{
+        width: max-content;
+    }
+    .movie-title{
+        padding-left: 5%;
+    }
+    .movie-title p{
+        font-size: 13px;
+        margin-bottom: 10px;
+}
+    
+}
+
+@media (max-width:550px){
+    .movie-title .title-img{
+        display: none;
+    }
+    .movie-title p{
+        font-size: 1em;
+}
+.hero-btn .play-btn,.info-btn{
+    padding: 6px;
+}
+.hero-btn{
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+}
